@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.util.Base64;
 
 @Component
-public class Generator implements iQrcodeGenerator{
+public class Generator implements iQrcodeGenerator {
     @Override
     public byte[] generate(String content) {
         byte[] base64Bytes = Base64.getEncoder().encode(content.getBytes());
