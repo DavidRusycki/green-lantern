@@ -1,5 +1,6 @@
-package com.dev.greenlantern.qrcode;
+package com.dev.greenlantern.infra.qrcode.reader.local;
 
+import com.dev.greenlantern.qrcode.reader.iQrcodeReader;
 import com.google.zxing.BinaryBitmap;
 import com.google.zxing.MultiFormatReader;
 import com.google.zxing.Result;
@@ -13,7 +14,7 @@ import java.io.InputStream;
 import java.util.Base64;
 
 @Component
-public class Reader implements iQrcodeReader {
+public class ZxingReader implements iQrcodeReader {
     @Override
     public String read(MultipartFile filePart) {
         String content = "";

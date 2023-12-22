@@ -1,8 +1,6 @@
-package com.dev.greenlantern.qrcode;
+package com.dev.greenlantern.qrcode.reader;
 
 import org.springframework.web.multipart.MultipartFile;
-
-import java.io.FileInputStream;
 
 public interface iQrcodeReader {
     public String read(MultipartFile filePart);

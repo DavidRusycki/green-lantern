@@ -1,14 +1,10 @@
 package com.dev.greenlantern.resources;
 
-import jdk.jfr.ContentType;
-import org.apache.tomcat.util.json.JSONParser;
 import org.json.JSONObject;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.awt.*;
 
 @RestController
 @RequestMapping("/api/health")
