@@ -1,5 +1,6 @@
-package com.dev.greenlantern.qrcode;
+package com.dev.greenlantern.infra.qrcode.provider.local;
 
+import com.dev.greenlantern.qrcode.provider.iQrcodeProvider;
 import net.glxn.qrgen.javase.QRCode;
 import org.springframework.stereotype.Component;
 
@@ -8,7 +9,7 @@ import java.io.FileInputStream;
 import java.util.Base64;
 
 @Component
-public class Generator implements iQrcodeGenerator{
+public class QrgenProvider implements iQrcodeProvider {
     @Override
     public byte[] generate(String content) {
         byte[] base64Bytes = Base64.getEncoder().encode(content.getBytes());
